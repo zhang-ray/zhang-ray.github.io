@@ -133,10 +133,11 @@ device:/ # tracepath 192.168.1.2
  1?: [LOCALHOST]                                         pmtu 1500
  1:  192.168.1.2                                          21.242ms reached
  1:  192.168.1.2                                           9.880ms reached
-device:/data # busybox wget -c http://192.168.1.2/index.html        # test HTTP protocol
+device:/data # busybox wget http://192.168.1.2        # test HTTP protocol
 Connecting to 192.168.1.2 (192.168.1.2:80)
 index.html           100% |*******************************|   156   0:00:00 ETA
-device:/data # busybox wget -c http://172.21.158.133/index.html     # test HTTP protocol
+device:/data # rm index.html
+device:/data # busybox wget http://172.21.158.133     # test HTTP protocol
 Connecting to 172.21.158.133 (172.21.158.133:80)
 Connecting to 172.21.158.133 (172.21.158.133:80)
 index.html           100% |*******************************| 11046   0:00:00 ETA
