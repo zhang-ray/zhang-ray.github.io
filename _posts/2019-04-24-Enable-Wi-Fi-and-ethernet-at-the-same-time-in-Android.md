@@ -142,7 +142,9 @@ Connecting to 172.21.158.133 (172.21.158.133:80)
 Connecting to 172.21.158.133 (172.21.158.133:80)
 index.html           100% |*******************************| 11046   0:00:00 ETA
 ~~~~
-**Done!**
+
+PS: we can ask kernel which interface will be used to send a packet to a specific ip address by `ip route get` command like this: `ip route get 8.8.8.8`
+
 
 
 ## What's next?
